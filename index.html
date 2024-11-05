@@ -4,136 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiruvananthapuram Trip Itinerary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #88c0d0;
+            --accent-color: #f9a825;
+            --text-color: #2e3440;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f0f8ff;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
-        header {
-            background: #007acc;
-            color: #fff;
-            padding: 20px;
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-        }
+
         .container {
-            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
         }
-        .section {
-            background: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .trip-info {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
         }
-        .section h2 {
-            color: #007acc;
+
+        .day-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+
+        .day-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
             margin-top: 0;
         }
-        .day-schedule {
-            margin: 15px 0;
-            font-size: 1.1em;
+
+        .time-slot {
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
         }
-        .day-schedule h3 {
-            color: #444;
+
+        .time {
+            font-weight: bold;
+            color: var(--primary-color);
         }
+
         .suggestions {
-            background: #e6f7ff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
         }
+
+        .suggestions h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .suggestions ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
-            background: #007acc;
-            color: #fff;
             text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: white;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Thiruvananthapuram Trip Itinerary</h1>
-    <p>Dates: November 23 - November 27, 2024 | Estimated Cost: 9,000 INR per person</p>
-</header>
-
-<div class="container">
-    <div class="section">
-        <h2>Day 1: November 23 (Saturday)</h2>
-        <div class="day-schedule">
-            <h3>7:00 PM</h3>
-            <p>Board Kerala State Transport AC Sleeper bus from Bengaluru (1,406 INR per person). Overnight travel to Thiruvananthapuram.</p>
-        </div>
+    <div class="header">
+        <h1>Thiruvananthapuram Trip Itinerary</h1>
     </div>
 
-    <div class="section">
-        <h2>Day 2: November 24 (Sunday)</h2>
-        <div class="day-schedule">
-            <h3>9:00 AM</h3>
-            <p>Arrive in Thiruvananthapuram, check in to the BNB, freshen up.</p>
+    <div class="container">
+        <div class="trip-info">
+            <h3>Dates: November 23 - November 27, 2024</h3>
+            <h3>Estimated Cost: 9,000 INR per person</h3>
+        </div>
 
-            <h3>11:00 AM</h3>
-            <p>Explore the city by foot or public transport.</p>
-
-            <div class="suggestions">
-                <strong>Suggested Places to Explore:</strong>
-                <ul>
-                    <li>Sree Padmanabhaswamy Temple</li>
-                    <li>Napier Museum and Art Gallery</li>
-                    <li>Kuthira Malika Palace</li>
-                    <li>Kovalam Beach (if time permits)</li>
-                </ul>
+        <div class="day-card">
+            <h2 class="day-title">Day 1: November 23 (Saturday)</h2>
+            <div class="time-slot">
+                <p class="time">7:00 PM</p>
+                <p>Board Kerala State Transport AC Sleeper bus from Bengaluru (1,406 INR per person). Overnight travel to Thiruvananthapuram.</p>
             </div>
-
-            <h3>Evening</h3>
-            <p>Relax at the BNB or explore the local food scene.</p>
         </div>
+
+        <div class="day-card">
+            <h2 class="day-title">Day 2: November 24 (Sunday)</h2>
+            <div class="time-slot">
+                <p class="time">9:00 AM</p>
+                <p>Arrive in Thiruvananthapuram, check in to the <a href="https://www.airbnb.co.in/rooms/46223221?productId=46223221&check_in=2024-11-24&check_out=2024-11-26&guests=1&adults=8&children=0&infants=0&pets=0&source_impression_id=p3_1730797670_P3sY410KL0-rJXLD" target="_blank">BNB</a>, freshen up.</p>
+            </div>
+            <div class="time-slot">
+                <p class="time">11:00 AM</p>
+                <p>Explore the city by foot or public transport.</p>
+                <div class="suggestions">
+                    <h4>Suggested Places to Explore:</h4>
+                    <ul>
+                        <li>Sree Padmanabhaswamy Temple</li>
+                        <li>Napier Museum and Art Gallery</li>
+                        <li>Kuthira Malika Palace</li>
+                        <li>Kovalam Beach (if time permits)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="time-slot">
+                <p class="time">Evening</p>
+                <p>Relax at the <a href="https://www.airbnb.co.in/rooms/46223221?productId=46223221&check_in=2024-11-24&check_out=2024-11-26&guests=1&adults=8&children=0&infants=0&pets=0&source_impression_id=p3_1730797670_P3sY410KL0-rJXLD" target="_blank">BNB</a> or explore the local food scene.</p>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <h2 class="day-title">Day 3: November 25 (Monday)</h2>
+            <div class="time-slot">
+                <p class="time">6:00 AM</p>
+                <p>Pick up rented vehicles.</p>
+            </div>
+            <div class="time-slot">
+                <p class="time">7:00 AM</p>
+                <p>Depart for Ponmudi Hills. Spend the day enjoying the scenic views and small hikes.</p>
+            </div>
+            <div class="time-slot">
+                <p class="time">5:00 PM</p>
+                <p>Return to Thiruvananthapuram. Relax or explore the city in the evening.</p>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <h2 class="day-title">Day 4: November 26 (Tuesday)</h2>
+            <div class="time-slot">
+                <p class="time">9:00 AM</p>
+                <p>Check out from the <a href="https://www.airbnb.co.in/rooms/46223221?productId=46223221&check_in=2024-11-24&check_out=2024-11-26&guests=1&adults=8&children=0&infants=0&pets=0&source_impression_id=p3_1730797670_P3sY410KL0-rJXLD" target="_blank">BNB</a>. Free time for last-minute sightseeing or relaxing at Kovalam Beach.</p>
+            </div>
+            <div class="time-slot">
+                <p class="time">Evening</p>
+                <p>Board the bus back to Bengaluru.</p>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <h2 class="day-title">Day 5: November 27 (Wednesday)</h2>
+            <div class="time-slot">
+                <p class="time">Morning</p>
+                <p>Arrive back in Bengaluru.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="section">
-        <h2>Day 3: November 25 (Monday)</h2>
-        <div class="day-schedule">
-            <h3>6:00 AM</h3>
-            <p>Pick up rented vehicles.</p>
-
-            <h3>7:00 AM</h3>
-            <p>Depart for Ponmudi Hills. Spend the day enjoying the scenic views and small hikes.</p>
-
-            <h3>5:00 PM</h3>
-            <p>Return to Thiruvananthapuram. Relax or explore the city in the evening.</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Day 4: November 26 (Tuesday)</h2>
-        <div class="day-schedule">
-            <h3>9:00 AM</h3>
-            <p>Check out from the BNB. Free time for last-minute sightseeing or relaxing at Kovalam Beach.</p>
-
-            <h3>Evening</h3>
-            <p>Board the bus back to Bengaluru.</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Day 5: November 27 (Wednesday)</h2>
-        <div class="day-schedule">
-            <h3>Morning</h3>
-            <p>Arrive back in Bengaluru.</p>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2024 Trip Planner | Contact: vickspatil1404@gmail.com</p>
-</footer>
-
+    <footer>
+        <p>© 2024 Trip Planner | Contact: <a href="mailto:vickspatil1404@gmail.com">vickspatil1404@gmail.com</a></p>
+    </footer>
 </body>
 </html>
